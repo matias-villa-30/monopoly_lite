@@ -93,6 +93,13 @@ function generateCells() {
     questionPart.id = 'kysymys';
     leftPart.appendChild(questionPart);
 
+    // title below the flag
+
+    const otsikko = document.createElement('h1');
+    otsikko.className = 'questions';
+    otsikko.id = 'titulo';
+    leftPart.appendChild(otsikko);
+
     // container for the answers
 
     const answersPart = document.createElement('div');
@@ -109,15 +116,18 @@ function generateCells() {
     const but1 = document.createElement('button');
     but1.className = 'button';
     but1.textContent = 'Pass';
+    but1.disabled = true;
 
     const but2 = document.createElement('button');
     but2.className = 'button';
     but2.textContent = 'Hint';
+    but2.disabled = true;
 
     const nappi_button = document.createElement('button');
     nappi_button.className = 'button';
     nappi_button.id = "roll_dice";
     nappi_button.textContent = "Roll dice";
+    nappi_button.disabled = true;
 
     gameButtons.appendChild(but1);
     gameButtons.appendChild(but2);
@@ -128,6 +138,7 @@ function generateCells() {
     rightPart.className = 'right-part';
     centralContainer.appendChild(rightPart);
 
+    // right buttons container
     const buttonContainer = document.createElement('div');
     buttonContainer.className = 'buttons';
     rightPart.appendChild(buttonContainer);

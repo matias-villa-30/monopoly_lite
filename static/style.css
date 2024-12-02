@@ -130,3 +130,31 @@ main {
     margin: 0;
     padding: 0;
 }
+
+#kysymys {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;     /* Center the content vertically */
+    width: 100%;             /* Make sure it takes up the full width of the parent */
+    margin: auto;            /* Optional: ensures proper alignment within its parent */
+}
+
+.questions {
+    display: flex;            /* Use flex to align children */
+    flex-direction: column;   /* Keep radio buttons stacked vertically */
+    justify-content: center;  /* Center vertically within the parent container */
+    align-items: center;      /* Center horizontally */
+    height: 80%;             /* Ensure the container takes enough height for centering */
+    width: 100%;                 /* Optional: ensures it takes up full available width for centering */
+    gap: 10px;
+}
+
+.questions label {
+    display: flex;               /* Aligns radio button and label text together */
+    align-items: center;         /* Vertically aligns the radio button and text */
+    width: 150px;                /* Ensures labels are of the same width for proper alignment */
+}
+
+input[type="radio"] {
+    margin-right: 10px;          /* Adds space between radio button and the label text */
+}

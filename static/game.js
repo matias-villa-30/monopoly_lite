@@ -48,6 +48,10 @@ async function gameOn(event) {
     <p>Player 2: ${player2}</p>
   `;
   const reminder = alert("Click roll dice to begin");
+  const dado = document.getElementById("roll_dice");
+  dado.disabled = false;
+  const start_button = document.getElementById('start_button');
+  start_button.disabled = true;
 }
 
 

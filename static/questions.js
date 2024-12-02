@@ -65,6 +65,9 @@ function displayFlag(flagUrl) {
   const img = document.createElement('img');
   img.src = flagUrl || ''; // Handle missing flags
   results.appendChild(img);
+  const titulo = document.getElementById('titulo');
+  titulo.innerHTML = "Guess the flag!";
+  results.appendChild(titulo);
 }
 
 // Function to generate 3 wrong answers
